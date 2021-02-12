@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Calculator</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<div id="main-container">
@@ -13,76 +14,39 @@
 
 				<main class="round-borders" id="main">
 					<div class="screen-calc round-borders">
-						<div class="screen-txt"></div>
+						<div id="js-screen-memory" class="screen-memory"></div>
+						<div id="js-screen-txt">0</div>
 					</div>
 
 					<div id="button-pad">
 						<div id="main-pad">
 							<div id="option-pad">
-								<div class="bg-secondary button-operator round-borders">
-									<div class="button-value round-borders no-select">AC</div>
-								</div>
-								<div class="bg-secondary button-operator round-borders">
-									<div class="button-value round-borders no-select">C</div>
-								</div>
-								<div class="bg-secondary button-operator round-borders">
-									<div class="button-value round-borders no-select">&lt;</div>
-								</div>
+								<div class="js-calc-option button-operator">AC</div>
+								<div class="js-calc-option button-operator">C</div>
+								<div class="js-calc-option button-operator">&lt;</div>
 							</div>
 							<div id="num-pad">
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">7</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">8</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">9</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">4</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">5</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">6</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">1</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">2</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">3</div>
-								</div>
+								<div class="js-calc-option button-operator">7</div>
+								<div class="js-calc-option button-operator">8</div>
+								<div class="js-calc-option button-operator">9</div>
+								<div class="js-calc-option button-operator">4</div>
+								<div class="js-calc-option button-operator">5</div>
+								<div class="js-calc-option button-operator">6</div>
+								<div class="js-calc-option button-operator">1</div>
+								<div class="js-calc-option button-operator">2</div>
+								<div class="js-calc-option button-operator">3</div>
 							</div>
 							<div id="special-numpad">
-								<div class="bg-primary round-borders button-zero">
-									<div class="button-value round-borders no-select">0</div>
-								</div>
-								<div class="bg-primary round-borders button-operator">
-									<div class="button-value round-borders no-select">.</div>
-								</div>
+								<div class="js-calc-option button-zero">0</div>
+								<div class="js-calc-option button-operator">.</div>
 							</div>
 						</div>
 						<div id="column-operators">
-							<div class="bg-secondary button-operator round-borders">
-								<div class="button-value round-borders no-select">/</div>
-							</div>
-							<div class="bg-secondary button-operator round-borders">
-								<div class="button-value round-borders no-select">x</div>
-							</div>
-							<div class="bg-secondary button-operator round-borders">
-								<div class="button-value round-borders no-select">-</div>
-							</div>
-							<div class="bg-secondary button-operator round-borders">
-								<div class="button-value round-borders no-select">+</div>
-							</div>
-							<div class="bg-secondary button-operator round-borders">
-								<div class="button-value round-borders no-select">=</div>
-							</div>
+							<div class="js-calc-option button-operator">/</div>
+							<div class="js-calc-option button-operator">x</div>
+							<div class="js-calc-option button-operator">-</div>
+							<div class="js-calc-option button-operator">+</div>
+							<div class="js-calc-option button-operator">=</div>
 						</div>
 					</div>
 				</main>
