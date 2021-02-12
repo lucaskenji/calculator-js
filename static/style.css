@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.round-sqr {
+body {
+	background: #1b1b2f;
+	color: #ececec;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.round-borders {
 	border-radius: 10px;
 }
 
+.media-icon {
+	width: 22px;
+	height: 22px;
+}
+
 .screen-calc {
-	background-color: #262626;
-	height: 32px;
-	width: 268px;
-	color: white;
+	height: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	font-size: 20px;
 }
 
 .screen-txt {
@@ -21,7 +36,6 @@
 .button-operator {
 	width: 64px;
 	height: 64px;
-	color: white;
 	display: flex;
 	justify-content: center;
 }
@@ -29,7 +43,6 @@
 .button-zero {
 	width: 132px;
 	height: 64px;
-	color: white;
 	display: flex;
 	justify-content: center;
 }
@@ -38,32 +51,34 @@
 	align-self: center;
 }
 
-.bg-orange {
-	background-color: #ff8000;
+.bg-primary {
+	background-color: #1f4068;
 }
 
-.bg-blue {
-	background-color: #0040ff;
+.bg-secondary {
+	background-color: #543864;
 }
 
-.bg-red {
-	background-color: red;
+.bg-primary:active {
+	background-color: #162447;
 }
 
-.bg-orange:active {
-	background-color: #b35900;
+.bg-secondary:active {
+	background-color: #2e173b;
 }
 
-.bg-blue:active {
-	background-color: #002080;
+#main-container {
+	font-family: Roboto !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.bg-red:active {
-	background-color: #800000;
-}
-
-.google-font {
-	font-family: Roboto;
+#main-container hr {
+	width: 100%;
+	margin-top: 30px;
+	opacity: 0.5;
 }
 
 .no-select {
@@ -71,16 +86,7 @@
 	-webkit-touch-callout: none;
 	user-select: none;
 }
-
-#main {
-	width: 284px;
-	height: 392px;
-	padding-top: 12px;
-	background-color: #4d4d4d;
-}
-
 #button-pad {
-	width: 268px;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 4px;
@@ -88,15 +94,12 @@
 }
 
 #main-pad {
-	width: 200px;
-	height: 336px;
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-gap: 4px;
 }
 
 #option-pad {
-	width: 200px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 4px;
@@ -112,8 +115,6 @@
 }
 
 #special-numpad {
-	width: 200px;
-	height: 64px;
 	padidng-top: 4px;
 	grid-gap: 4px;
 	display: grid;
@@ -121,8 +122,6 @@
 }
 
 #column-operators {
-	width: 64px;
-	height: 264px;
 	display: grid;
 	grid-template-rows: auto auto auto auto;
 	grid-gap: 4px;
